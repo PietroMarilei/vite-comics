@@ -43,11 +43,11 @@ export default {
           <h3>DC COMICS</h3>
           <ul>
             <li>Characters</li>
-            <li>Characters</li>
-            <li>Characters</li>
-            <li>Characters</li>
-            <li>Characters</li>
-            <li>Characters</li>
+            <li>Comics</li>
+            <li>Movies</li>
+            <li>TV</li>
+            <li>Games</li>
+            <li>Videos</li>
           </ul>
           <div class="my_shop">
             <h3>MY SHOP</h3>
@@ -60,23 +60,28 @@ export default {
         <div class="col-4 my_DC">
           <h3>DC </h3>
           <ul>
-            <li>Characters</li>
-            <li>Characters</li>
-            <li>Characters</li>
-            <li>Characters</li>
-            <li>Characters</li>
-            <li>Characters</li>
+            <li>Term of Use</li>
+            <li>Privacy Policy</li>
+            <li>Ad Choiches</li>
+            <li>Advertising</li>
+            <li>Jobs</li>
+            <li>Subscriptions</li>
+            <li>Talent Workshop</li>
+            <li>CPSC Certificates</li>
+            <li>Rates</li>
+            <li>Shop Help</li>
+            <li>Contact us</li>
           </ul>
         </div>
         <div class="col-4 my_sites">
           <h3>SITES</h3>
           <ul>
-            <li>Characters</li>
-            <li>Characters</li>
-            <li>Characters</li>
-            <li>Characters</li>
-            <li>Characters</li>
-            <li>Characters</li>
+            <li>DC</li>
+            <li>Mad magazines</li>
+            <li>DC Kids</li>
+            <li>DC Universe</li>
+            <li>DC Power Visa</li>
+            
           </ul>
         </div>
       </div>
@@ -119,10 +124,11 @@ export default {
 @use "../assets/scss/partials/variables.scss" as*;
    
     .my_blue_section {
+      padding: 2rem 8rem;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
-      padding: 2rem;
+      
       background-color:$blue_banner ;
       font-stretch: semi-condensed;
       text-transform: uppercase;
@@ -171,6 +177,8 @@ export default {
         }
         li {
           color: rgb(166, 166, 166);
+          padding: 0.2rem 0;
+          font-size: 0.7rem;
         }
       }
       }
@@ -195,7 +203,7 @@ export default {
 
       button {
         font-weight: 800;
-        font-stretch: condensed;
+        font-stretch:  semi-condensed;
         color: $secondary-color-white;
         border: 2px solid $blue-banner;
         border-radius: 5px;
@@ -209,7 +217,7 @@ export default {
         h3 {
           color: $blue-banner;
           font-weight: 800;
-          font-stretch: condensed;
+          font-stretch:  semi-condensed;
           padding: 0 1rem;
         }
         a {

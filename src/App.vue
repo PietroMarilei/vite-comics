@@ -21,12 +21,14 @@ export default {
 </script>
 
 <template>
+  <div class="my_container">
+    <HeaderComponent/>
 
-  <HeaderComponent/>
+    <MainComponent/>
 
-  <MainComponent/>
-
-  <FooterComponent/>
+    <FooterComponent/>
+  </div>
+  
 
 </template>
 
@@ -37,5 +39,10 @@ export default {
   
   body {
     background-color: lightslategray;
+  }
+
+  .my_container {
+    margin: 0 auto;
+    max-width: 1200px;
   }
 </style>

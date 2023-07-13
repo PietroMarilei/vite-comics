@@ -42,6 +42,7 @@ export default {
   }
 
   .my_container {
+    //background-color: $secondary-color-white;
     margin: 0 auto;
     max-width: 1200px;
   }

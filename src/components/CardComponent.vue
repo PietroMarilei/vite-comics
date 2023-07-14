@@ -6,7 +6,7 @@ export default {
   },
   props: {
     cardImg: String,
-    productTipe: String,
+    series: String,
   },
   methods: {
 
@@ -16,9 +16,9 @@ export default {
 
 <template>
     
-    <div class="my_product">             
-          <img :src="cardImg" :alt="productTipe">
-          <h5 class="my_prod_title">{{productTipe}}</h5>        
+    <div class="my_card">             
+          <img :src="cardImg" :alt="series">
+          <h5 class="my_prod_title">{{series}}</h5>        
     </div>
  
 
@@ -27,16 +27,25 @@ export default {
 <style lang="scss" scoped>
 @use "../assets/scss/partials/variables.scss" as *;
    
-        .my_product {
+        .my_card {
           color: $secondary-color-white;
           padding: 0.5rem;
           width: calc(100% / 6);
+          
 
           img {
-             width: 100px;
-             height: 100px;
+             width: 170px;
+             height: 170px;
               object-fit: cover;
-      }
+          }
+
+          h5 {
+            font-weight: lighter;
+            text-transform: uppercase;
+            padding: 0.5rem 0;
+          }
+            
+          
     }
     
     

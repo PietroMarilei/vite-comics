@@ -2,7 +2,7 @@
 export default {
   data() {
     return {
-      greeting: 'Hello World!'
+      
     }
   },
   methods: {
@@ -14,7 +14,8 @@ export default {
 <template>
     <!-- header -->
    <header class="">
-    <div class="my_left_header">
+    <div class="my_container">
+      <div class="my_left_header">
       <img src="../assets/img/dc-logo.png" alt="logo">
     </div>
     <div class="my_right_header">
@@ -29,6 +30,8 @@ export default {
       <a href="#">News</a>
       <a href="#">Shop</a>
     </div>
+    </div>
+    
   </header>
 
 </template>
@@ -39,6 +42,8 @@ export default {
 
     header {       
         background-color: $secondary-color-white;
+        
+      .my_container {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -47,8 +52,8 @@ export default {
         font-stretch: condensed;
         padding: 1rem;
         text-align: center;
-
-      a {
+        max-width: 1200px;
+        a {
         text-transform: uppercase;
         padding: 0.3rem;
       }
@@ -61,6 +66,8 @@ export default {
         padding:0 1rem;
         width: 120px;
       }
+      }
+      
     }
 
     

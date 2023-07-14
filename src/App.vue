@@ -21,13 +21,11 @@ export default {
 </script>
 
 <template>
-  <div class="my_container">
-    <HeaderComponent/>
+  <HeaderComponent/>
 
     <MainComponent/>
 
     <FooterComponent/>
-  </div>
   
 
 </template>

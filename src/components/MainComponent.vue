@@ -1,5 +1,10 @@
 <script>
+import CardComponent from "../components/CardComponent.vue" ;
+
 export default {
+  components: {
+    CardComponent,
+  },
   data() {
     return {
       productsArr: [
@@ -85,14 +90,19 @@ export default {
 </script>
 
 <template>
-    <main>
+    <main sfondo>
+      .container max 1200
     <h2> Current Series</h2>
 
     <div class="my_prod_shop">
-        <div class="my_product" v-for="(singleProduct,i) in productsArr" :key="i">     
+        <!-- <div class="my_product" v-for="(singleProduct,i) in productsArr" :key="i">     
           <img :src="singleProduct.thumb" :alt="singleProduct.series">
           <h5 class="my_prod_title">{{singleProduct.series }}</h5>
-        </div>
+        </div> -->
+        <CardComponent
+        v-for="(singleProduct,i) in productsArr" :key="i"
+            :cardImg="singleProduct.thumb"
+            :productTipe="singleProduct.type" />                 
     </div>
 
    
@@ -111,26 +121,14 @@ export default {
     text-align: center;
   }
   main {
-    .my_prod_shop {
+     .my_prod_shop {
         display: flex;
         justify-content: space-around;
         //align-items: center;
         flex-wrap: wrap;
         width: 70%;
         margin: 0 auto;
-        .my_product {
-          color: $secondary-color-white;
-          padding: 0.5rem;
-          width: 150px;
-          
-          img {
-             width: 100px;
-             height: 100px;
-              object-fit: cover;
-      }
-    }
-    }
     
-  }
+  }}
     
 </style>

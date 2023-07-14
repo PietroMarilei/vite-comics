@@ -90,20 +90,32 @@ export default {
 </script>
 
 <template>
-    <main sfondo>
-      .container max 1200
-    <h2> Current Series</h2>
+    <main>
+      
+      <div class="my_big_jumbo">
+        
+      </div>
 
-    <div class="my_prod_shop">
+      <div class="my_container">
+        <h2>CURRENT SERIES</h2>
+
+        <div div class="my_prod_shop">
         <!-- <div class="my_product" v-for="(singleProduct,i) in productsArr" :key="i">     
           <img :src="singleProduct.thumb" :alt="singleProduct.series">
           <h5 class="my_prod_title">{{singleProduct.series }}</h5>
         </div> -->
         <CardComponent
-        v-for="(singleProduct,i) in productsArr" :key="i"
+         v-for="(singleProduct,i) in productsArr" :key="i"
             :cardImg="singleProduct.thumb"
-            :productTipe="singleProduct.type" />                 
-    </div>
+            :series="singleProduct.series" />  
+            
+         <h3>
+            LOAD MORE
+         </h3>
+      </div>
+      </div> 
+      
+    
 
    
 
@@ -116,19 +128,41 @@ export default {
   h2 {
     color:$secondary-color-white ;
     background-color: $blue-banner;
-    padding: 0.5rem;
-    width: 200px;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    font-weight: 600;
     text-align: center;
+     position: absolute;
+   top: -20px;
   }
   main {
+     .my_big_jumbo {
+     background-image: url(../assets/img/jumbotron.jpg);
+     height: 400px;
+     background-position: top;
+   }
+
+   .my_container {
+      max-width: 1200px;
+      position: relative;
+      padding: 2rem;
+
      .my_prod_shop {
         display: flex;
         justify-content: space-around;
         //align-items: center;
         flex-wrap: wrap;
-        width: 70%;
-        margin: 0 auto;
+        width: 90%;
+        margin:0 auto;
+
+      }
+      h3 {
+         color: $secondary-color-white;
+         background-color: $blue-banner;
+         padding: 0.5rem 3rem;
+         font-size: medium;
+      }
+   }}
     
-  }}
     
 </style>

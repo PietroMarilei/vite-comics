@@ -57,7 +57,7 @@ export default {
         text-transform: uppercase;
         padding: 0.3rem;
       }
-      //💢 hover non va 
+      
       a:hover,
        & .active {
         border-bottom: 4px solid rgb(0, 166, 255);

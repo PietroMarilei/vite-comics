@@ -20,7 +20,9 @@ export default {
     <BlueBarComponent/>
     
     <div class="my_jumbo_footer">
-
+      <div class="my_container">
+        
+      </div>
       <div class="my_footer_left">
         <div class="col-4 my_comics">
           <h3>DC COMICS</h3>

@@ -1,41 +1,24 @@
 <script>
+import BlueBarComponent from './BlueBarComponent.vue';
 export default {
-  data() {
-    return {
-      greeting: 'Hello World!'
-    }
-  },
-  methods: {
-
-  },
+    components: [
+        BlueBarComponent
+    ],
+    data() {
+        return {
+            greeting: "Hello World!"
+        };
+    },
+    methods: {},
+    components: { BlueBarComponent }
 }
 </script>
 
 <template>
     <!-- footer template -->
    <footer>
-    <div class="my_blue_section">
-      <div class="my_item">
-        <img src="../assets/img/buy-comics-digital-comics.png" alt="item">
-         <p>Digital Comics</p>
-      </div>
-       <div class="my_item">
-        <img src="../assets/img/buy-comics-merchandise.png" alt="item">
-         <p>Digital Comics</p>
-      </div>
-       <div class="my_item">
-        <img src="../assets/img/buy-comics-subscriptions.png" alt="item">
-         <p>Digital Comics</p>
-      </div>
-       <div class="my_item">
-        <img id="gps_logo" src="../assets/img/buy-comics-shop-locator.png" alt="item">
-         <p>Digital Comics</p>
-      </div>
-       <div class="my_item">
-        <img  src="../assets/img/buy-dc-power-visa.svg" alt="item">
-         <p>Digital Comics</p>
-      </div>
-    </div>
+    <BlueBarComponent/>
+    
     <div class="my_jumbo_footer">
 
       <div class="my_footer_left">
@@ -123,36 +106,7 @@ export default {
 <style lang="scss" scoped>
 @use "../assets/scss/partials/variables.scss" as*;
    
-    .my_blue_section {
-      padding: 2rem 8rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      
-      background-color:$blue_banner ;
-      font-stretch: semi-condensed;
-      text-transform: uppercase;
-      font-weight: 600;
-
-      .my_item {
-      display: flex;
-      align-items: center;
-      color: $secondary-color-white;
-
-
-      img {
-        width: 50px;
-        padding:  0.5rem;
-      }
-
-      p {
-        padding: 0.5rem;
-      }
-    }
-    };
-    #gps_logo {
-      width: 40px;
-    };
+   
     
     .my_jumbo_footer {
       background-image: url(../assets/img/footer-bg.jpg);

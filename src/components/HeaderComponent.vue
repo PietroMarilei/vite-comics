@@ -18,7 +18,7 @@ export default {
       <img src="../assets/img/dc-logo.png" alt="logo">
     </div>
     <div class="my_right_header">
-      <a href="#">Characters</a>
+      <a class="active" href="#">Characters</a>
       <a href="#">Comics</a>
       <a href="#">Movies</a>
       <a href="#">Tv</a>
@@ -51,6 +51,11 @@ export default {
       a {
         text-transform: uppercase;
         padding: 0.3rem;
+      }
+      // 💢 hover non va 
+      // & :hover,
+       & .active {
+        border-bottom: 4px solid rgb(0, 166, 255);
       }
       img {
         padding:0 1rem;

@@ -75,7 +75,8 @@ export default {
         <img src="../assets/img/dc-logo-bg.png" alt="">
       </div>
     </div>
-    <div class="my_footer_footer">
+    <div class="my_container">
+      <div class="my_footer_footer">
       <button>
         <a href="#">
           SIGN UP NOW
@@ -101,6 +102,8 @@ export default {
         </a>
       </div>
     </div>
+    </div>
+    
   </footer>
 
 </template>
@@ -108,7 +111,9 @@ export default {
 <style lang="scss" scoped>
 @use "../assets/scss/partials/variables.scss" as*;
    
-   
+   .my_container {
+    max-width: 1200px
+   }
     
     .my_jumbo_footer {
       background-image: url(../assets/img/footer-bg.jpg);
